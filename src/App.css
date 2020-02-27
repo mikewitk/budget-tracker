@@ -3,8 +3,7 @@ body {
 }
 
 .app-container {
-  display: flex;
-  width: 375px;
   margin: auto;
   padding-top: 50px;
+  width: 375px;
 }
