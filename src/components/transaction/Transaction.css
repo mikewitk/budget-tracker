@@ -1,0 +1,33 @@
+.transaction-list-container {
+  background-color: rgb(233, 230, 230);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.transaction-list-container h3 {
+  color: #65BCBF;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #65BCBF;
+  padding-bottom: 5px;
+}
+
+.transaction-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px;
+  border-bottom: 1px solid rgb(101, 188, 191, 0.3);
+}
+
+.transaction-item:last-child {
+  border-bottom: none;
+}
+
+.positive {
+  color: #65BCBF;
+  font-weight: bold;
+}
+
+.negative {
+  color: #F8777D;
+  font-weight: bold;
+}
