@@ -3,6 +3,7 @@
   margin: 20px 0;
   justify-content: center;
   border-bottom: 2px solid rgba(0,0,0,0.1);
+  padding-bottom: 5px;
 }
 
 .header-title {
