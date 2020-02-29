@@ -1,32 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './Transaction.css'
 import Transaction from './Transaction'
-
-const transactions = [
-  {
-    id: 1,
-    text: "Flower",
-    amount: -30.09
-  },
-  {
-    id: 2,
-    text: "Book",
-    amount: -50.25
-  },
-  {
-    id: 3,
-    text: "Salary",
-    amount: +365.89
-  },
-  {
-    id: 4,
-    text: "Bonus",
-    amount: +46.32
-  },
-]
+import { GlobalContext } from '../../context/GlobalState'
 
 const TransactionList = () => {
 
+  const { transactions } = useContext(GlobalContext)
+  
   return (
     <div className="transaction-list-container">
       <h3>History</h3>
