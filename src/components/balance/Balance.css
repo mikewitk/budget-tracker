@@ -2,17 +2,86 @@ h4 {
   color: #ffffff;
 }
 
+.balance-container {
+  margin-bottom: 10px;
+}
+
+.balance-container p, .balance-container h1  {
+  background-color: white;
+  border-radius: 20px;
+  padding: 0 10px;
+  line-height: 150%;
+}
+
+.total-container h4 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.total-container h1 {
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: fit-content;
+}
+
+.income-expense-container {
+  display: flex;
+  margin-top: 10px;
+}
+
+.income-expense-container h4 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.income-expense-container p {
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: fit-content;
+}
+
+.positive {
+  color: #065658;
+  font-weight: bold;
+}
+
+.negative {
+  color: #ee2a34;
+  font-weight: bold;
+}
+
+.amount-container {
+  width: 100%;
+}
+
+.amount-container:last-child {
+  border-left: 1px solid rgba(0,0,0,0.3);
+}
+
+/* --------------------------
+
+h4 {
+  color: #ffffff;
+}
+
 .balance-container p, .balance-container h1  {
   background-color: white;
   border-radius: 20px;
   padding: 0 20px;
+  line-height: 150%;
 }
 
 .balance-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
 }
 
 .total-container {
@@ -83,3 +152,4 @@ h4 {
   color: #ee2a34;
   font-weight: bold;
 }
+*/
