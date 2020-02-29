@@ -20,7 +20,6 @@ h4 {
   display: flex;
   justify-content: center;
   flex-flow: wrap;
-  
 }
 
 .total-container h4 {
@@ -32,7 +31,6 @@ h4 {
   font-weight: bold;
   display: flex;
   justify-content: center;
-  
 }
 
 .income-expense-container {
@@ -55,9 +53,8 @@ h4 {
 
 .income-container p {
   font-size: 20px;
-  color: #2e3a99;
+  color: #065658;
   font-weight: bold;
- 
 }
 
 .expense-container {
@@ -73,7 +70,16 @@ h4 {
 
 .expense-container p {
   font-size: 20px;
-  color: #4d2716;
+  color: #ee2a34;
   font-weight: bold;
-  
+}
+
+.positive {
+  color: #065658;
+  font-weight: bold;
+}
+
+.negative {
+  color: #ee2a34;
+  font-weight: bold;
 }

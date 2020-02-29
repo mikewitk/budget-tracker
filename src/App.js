@@ -3,6 +3,7 @@ import './App.css';
 import Header from './components/header/Header'
 import Balance from './components/balance/Balance'
 import TransactionList from './components/transaction/TransactionList'
+import AddTransaction from './components/addTransaction/AddTransaction'
 
 const App = () => {
   return (
@@ -10,7 +11,7 @@ const App = () => {
       <Header />
       <Balance />
       <TransactionList />
-      <h1>ADD TRANSACTION COMPONENT</h1>
+      <AddTransaction />
     </div>
   );
 }
