@@ -32,3 +32,8 @@
   color: #ee2a34;
   font-weight: bold;
 }
+
+.del-btn {
+  border: 0;
+  background: none;
+}
