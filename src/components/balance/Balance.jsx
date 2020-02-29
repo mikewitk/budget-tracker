@@ -28,11 +28,11 @@ const Balance = () => {
       <div className="income-expense-container">
         <div className="amount-container">
           <h4>INCOME</h4>
-          <p className="positive">+${totalIncome}</p>
+          <p className="positive">+${totalIncome.toFixed(2)}</p>
         </div>
         <div className="amount-container">
           <h4>EXPENSE</h4>
-          <p className="negative">-${Math.abs(totalExpense)}</p>
+          <p className="negative">-${Math.abs(totalExpense).toFixed(2)}</p>
         </div>
       </div>
     </div>
