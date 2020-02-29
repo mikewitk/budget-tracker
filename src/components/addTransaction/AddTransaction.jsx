@@ -11,7 +11,7 @@ const AddTransaction = () => {
     <div className="add-transaction-container">
       <h3>Add new transaction</h3>
       <form action="">
-        <label for="description">Enter description</label>
+        <label htmlFor="description">Enter description</label>
         <input 
           type="text" 
           name="description" 
@@ -20,7 +20,7 @@ const AddTransaction = () => {
           required 
           className="add-transaction-description"
         />
-        <label for="description">Amount</label>
+        <label htmlFor="description">Amount</label>
         <input 
           type="number" 
           name="amount" 
