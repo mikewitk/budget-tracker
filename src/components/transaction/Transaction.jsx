@@ -7,14 +7,14 @@ const Transaction = ({ transaction }) => {
   const { deleteTransaction } = useContext(GlobalContext)
 
   const sign = transaction.amount >= 0 ? "+" : "-"
-  
+
   return (
-    <div>
+    <div className="transaction-container">
       <li className="transaction-item">
         <p>{transaction.description}</p>
         <span className={transaction.amount >= 0 ? "positive" : "negative"}>{sign}${Math.abs(transaction.amount).toFixed(2)}</span>
       </li>
-      <button className="del-btn" onClick={() => deleteTransaction(transaction.id)}><i class="fa fa-trash-o" /></button>
+      <button className="del-btn" onClick={() => deleteTransaction(transaction.id)}><i className="fa fa-trash-o" /></button>
     </div>
   )
 }

@@ -9,6 +9,19 @@
   padding-bottom: 5px;
 }
 
+.transaction-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.transaction-container button {
+  display: none;
+}
+
+.transaction-container:hover button {
+  display: flex;
+}
+
 .transaction-item {
   display: flex;
   justify-content: space-between;
@@ -16,6 +29,7 @@
   background-color: #ffffff;
   border-radius: 10px;
   margin: 0px 0px 5px 10px;
+  width: 100%;
 }
 
 .transaction-item:last-child {
@@ -36,4 +50,11 @@
 .del-btn {
   border: 0;
   background: none;
+  font-size: 18px;
+  margin-bottom: 8px;
+  background: #ec4141;
+  border-radius: 10px;
+  width: 35px;
+  justify-content: center;
+  margin-left: 5px;
 }
