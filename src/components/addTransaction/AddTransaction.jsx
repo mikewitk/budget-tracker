@@ -16,7 +16,7 @@ const AddTransaction = () => {
     const newTransaction = {
       id: Math.floor(Math.random() * 1000000),
       description,
-      amount: parseInt(amount)
+      amount: parseFloat(amount)
     }
 
     addTransaction(newTransaction)
@@ -37,7 +37,7 @@ const AddTransaction = () => {
         />
         <label htmlFor="description">Amount</label>
         <input 
-          type="number" 
+          type="text" 
           name="amount" 
           value={amount} 
           onChange={e => setAmount(e.target.value)} 
