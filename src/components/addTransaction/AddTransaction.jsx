@@ -12,11 +12,13 @@ const AddTransaction = () => {
 
   const handleSubmit = ( event ) => {
     event.preventDefault();
+    const type = amount >= 0 ? 'income' : 'expense';
 
     const newTransaction = {
       id: Math.floor(Math.random() * 1000000),
       description,
-      amount: parseFloat(amount)
+      amount: parseFloat(amount),
+      type
     }
 
     addTransaction(newTransaction)
