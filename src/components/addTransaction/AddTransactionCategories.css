@@ -1,0 +1,16 @@
+.categories-container select {
+  line-height: 130%;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  padding: 5px;
+  font-size: 16px;
+  font-family: 'Courier New', Courier, monospace;
+  border-radius: 5px;
+}
+
+.categories-container label {
+  display: block;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  color: white;
+}

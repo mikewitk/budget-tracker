@@ -3,7 +3,6 @@ import './Transaction.css'
 import { GlobalContext } from '../../context/GlobalState'
 
 const Transaction = ({ transaction }) => {
-console.log("Transaction -> transaction", transaction)
 
   const { deleteTransaction } = useContext(GlobalContext)
 

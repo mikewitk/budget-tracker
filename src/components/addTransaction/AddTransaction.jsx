@@ -40,16 +40,20 @@ const AddTransaction = () => {
           required 
           className="add-transaction-description"
         />
-        <label htmlFor="description">Amount</label>
-        <input 
-          type="text" 
-          name="amount" 
-          value={amount} 
-          onChange={e => setAmount(e.target.value)} 
-          required 
-          className="add-transaction-amount"
-        />
-        <AddTransactionCategories setCategory={setCategory} />
+        <div className="wrapper">
+          <div className="amount-wrapper">
+            <label htmlFor="description">Amount</label>
+            <input 
+              type="text" 
+              name="amount" 
+              value={amount} 
+              onChange={e => setAmount(e.target.value)} 
+              required 
+              className="add-transaction-amount"
+            />
+          </div>
+          <AddTransactionCategories setCategory={setCategory} />
+        </div>
         <button className="add-transaction-button" >Add</button>
       </form>
     </div>
