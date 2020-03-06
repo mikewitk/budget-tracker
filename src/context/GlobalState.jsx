@@ -9,38 +9,48 @@ const initialState = {
       description: "Flower",
       amount: -29.99,
       type: 'expense',
+      category: 'Personal',
     },
     {
       id: 2,
       description: "Book",
       amount: -45.50,
       type: 'expense',
+      category: 'Education',
     },
     {
       id: 3,
       description: "Income",
       amount: +456.32,
       type: 'income',
+      category: 'Salary',
     },
     {
       id: 4,
       description: "Bonus",
       amount: +89.57,
       type: 'income',
+      category: 'Bonus',
     },
     {
       id: 5,
-      description: "Insurance",
+      description: "House Insurance",
       amount: -102.36,
       type: 'expense',
+      category: 'House',
     },
     {
       id: 6,
       description: "Investments",
       amount: +68.13,
       type: 'income',
+      category: 'Investment',
     },
-  ]
+  ],
+  categories: {
+    "income": ["Salary", "Investment", "Bonus"],
+    "expense": ["House", "Personal", "Education"]
+  }
 }
 
 
@@ -66,6 +76,7 @@ export const GlobalProvider = ({ children }) => {
   return (
     <GlobalContext.Provider value={{
       transactions: state.transactions,
+      categories: state.categories,
       deleteTransaction,
       addTransaction,
     }}>

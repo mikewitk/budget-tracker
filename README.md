@@ -12,12 +12,12 @@ The total income, expense, and overall will be displayed to facilitate the user 
 * Delete any income/expense
 * Input to add description and value for the income/expense
 * Filter by transaction type (expense, income, all)
+* Add category for transaction on input
+  income = [ salary, investment, bonus ]
+  expense = [ house, personal, education]
 
 ## Future Features
 
-* Add category for transaction on input
-income = [ salary, investment, bonus, etc ]
-expense = [ housing, utilities, etc]
 * Filter by transaction category
 * Sort transactions by date
 * Graph to display total transaction per day
