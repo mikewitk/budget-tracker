@@ -41,17 +41,22 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .add-transaction-amount {
-  width: 30%;
+  width: 90%;
 }
 
 .add-transaction-button {
   width: 100px;
   height: 30px;
-  margin-left: 50px;
-  border-radius: 15px;
+  margin-left: 10px;
+  border-radius: 5px;
   border: none;
   color: white;
   text-transform: uppercase;
   font-weight: bold;
   background-color: #5544d1;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-evenly;
 }

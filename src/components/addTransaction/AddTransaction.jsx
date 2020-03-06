@@ -1,12 +1,13 @@
 import React, { useContext, useState } from 'react'
 import './AddTransaction.css'
 import { GlobalContext } from '../../context/GlobalState'
-
+import AddTransactionCategories from './AddTransactionCategories'
 
 const AddTransaction = () => {
 
   const [description, setDescription] = useState("")
   const [amount, setAmount] = useState("")
+  const [category, setCategory] = useState("")
 
   const { addTransaction } = useContext(GlobalContext)
 
@@ -18,8 +19,10 @@ const AddTransaction = () => {
       id: Math.floor(Math.random() * 1000000),
       description,
       amount: parseFloat(amount),
-      type
+      type,
+      category
     }
+    console.log({newTransaction})
 
     addTransaction(newTransaction)
   }
@@ -37,15 +40,20 @@ const AddTransaction = () => {
           required 
           className="add-transaction-description"
         />
-        <label htmlFor="description">Amount</label>
-        <input 
-          type="text" 
-          name="amount" 
-          value={amount} 
-          onChange={e => setAmount(e.target.value)} 
-          required 
-          className="add-transaction-amount"
-        />
+        <div className="wrapper">
+          <div className="amount-wrapper">
+            <label htmlFor="description">Amount</label>
+            <input 
+              type="text" 
+              name="amount" 
+              value={amount} 
+              onChange={e => setAmount(e.target.value)} 
+              required 
+              className="add-transaction-amount"
+            />
+          </div>
+          <AddTransactionCategories setCategory={setCategory} />
+        </div>
         <button className="add-transaction-button" >Add</button>
       </form>
     </div>
