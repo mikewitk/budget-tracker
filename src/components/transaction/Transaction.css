@@ -5,7 +5,7 @@
 .title-filter-container {
   display: flex;
   margin-bottom: 20px;
-  border-bottom: 3px solid rgba(0,0,0,0.1);;
+  border-bottom: 3px solid #0000001a;
   padding-bottom: 5px;
   justify-content: space-between;
 }
@@ -14,23 +14,38 @@
   color: #ffffff;
 }
 
+.title-filter-container button {
+  border-radius: 5px;
+  border: none;
+  color: white;
+  background-color: #0000001a;
+}
+
 .filter-container {
   display: flex;
   font-size: 12px;
   align-items: center;
 }
 
-.filter-container p {
-  margin-left: 5px;
-  text-decoration: underline;
-  color: blue;
-  cursor: pointer;
+.filter-container select {
+  line-height: 130%;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  padding: 5px;
+  font-size: 16px;
+  font-family: 'Courier New', Courier, monospace;
+  border-radius: 5px;
 }
 
-.filter-container p:first-child {
-  text-decoration: none;
-  color: #FFFFFF;
-  cursor: none;
+.filter-container label {
+  display: block;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  color: white;
+}
+
+.isFilterAvailable {
+  display: none;
 }
 
 .transaction-container {
