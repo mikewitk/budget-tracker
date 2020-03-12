@@ -15,9 +15,8 @@ The total income, expense, and overall will be displayed to facilitate the user 
 * Add category for transaction on input
   income = [ salary, investment, bonus ]
   expense = [ house, personal, education]
+* Filter by transaction category
 
 ## Future Features
 
-* Filter by transaction category
-* Sort transactions by date
-* Graph to display total transaction per day
+* Graph to display total transaction per category
