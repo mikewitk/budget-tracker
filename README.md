@@ -18,7 +18,7 @@ The total income, expense, and overall will be displayed to facilitate the user 
 * Filter by transaction category
 
 
-!["Adding new transaction"](https://share.getcloudapp.com/GGuNKA5E)
+!["Adding new transaction"](https://share.getcloudapp.com/GGuNKA5E.gif)
 
 ## Future Features
 
