@@ -4,6 +4,11 @@ App that allow the user to input the income/expense and visualize in list.
 
 The total income, expense, and overall will be displayed to facilitate the user to track its economies.
 
+**BUILT WITH**
+- JavaScript
+- React (hooks)
+- CSS
+
 ## Features
 
 * Visualize current Budget
@@ -18,7 +23,11 @@ The total income, expense, and overall will be displayed to facilitate the user 
 * Filter by transaction category
 
 
-!["Adding new transaction"](https://share.getcloudapp.com/GGuNKA5E.gif)
+!["Adding new transaction"](https://github.com/mikewitk/budget-tracker/blob/master/docs/add_transaction.gif)
+
+!["Filtering transactions"](https://github.com/mikewitk/budget-tracker/blob/master/docs/filter_transaction.gif)
+
+!["Removing transactions"](https://github.com/mikewitk/budget-tracker/blob/master/docs/remove_transaction.gif)
 
 ## Future Features
 
