@@ -17,6 +17,9 @@ The total income, expense, and overall will be displayed to facilitate the user 
   expense = [ house, personal, education]
 * Filter by transaction category
 
+
+!["Adding new transaction"](https://share.getcloudapp.com/GGuNKA5E)
+
 ## Future Features
 
 * Graph to display total transaction per category
